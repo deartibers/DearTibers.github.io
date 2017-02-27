@@ -279,7 +279,7 @@
             <h3 id="var-let-const-的区别"><a href="#var-let-const-的区别" class="headerlink" title="var let const 的区别"></a>var let const 的区别</h3><p>​        这三个关键字都是用来定义变量的，在es6中，let用来定义变量，有着明确的作用域，外部函数将无法访问内部函数的let变量。Const用来定义常量，定义的常量指针不可改，指向这个变量的值可能改变。Var可以使得作用域升级，外部函数可以访问内部函数var声明的变量，这样变量作用域不明确不建议使用，建议使用let const</p>
 <p><strong>闭包：闭包函数为了访问外部函数的内部变量。</strong></p>
 <p><strong>场景1：</strong>在input标签的处理方法中，定义常量value=e.target.value，在方法中需要写一个过滤方法，</p>
-<p><code>let func = (ep =&gt; (s =&gt;</code><br>    <code>(s.dtu.name).search(ep)&gt;-1||(s.location).search(ep)&gt;-1||(pinyin.getCamelChars(s.location).toLowerCase()).search(ep)&gt;-1))(value);</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">let func = (ep =&gt; (s =&gt;</div><div class="line">     (s.dtu.name).search(ep)&gt;-1||(s.location).search(ep)&gt;-1||</div><div class="line">     (pinyin.getCamelChars(s.location).toLowerCase()).search(ep)&gt;-1))(value);</div></pre></td></tr></table></figure>
 <p>​        这里使用了闭包函数，因为在input的处理函数外部使用这个过滤方法的时候将不能访问到变量value，需要使用闭包语法。</p>
 
           
