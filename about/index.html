@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Dear Tibers" type="application/atom+xml" />
 
@@ -89,6 +87,7 @@
 
 
 <meta name="description" content="个人信息：​        所在地：江苏 
+​    邮箱：17315718186@163.com
 ​        技术栈：reactjs  + nodejs + antd +…….
 ​        工作经历：智慧城市项目，桥梁安全监测系统…….
 Keyboard：
@@ -104,18 +103,13 @@ bootstrap
 
 ant-design
 
-nodejs
-
-jquery
-
-c# ,linq
-​
-.">
+n">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://deartibers.github.io/about/index.html">
 <meta property="og:site_name" content="Dear Tibers">
 <meta property="og:description" content="个人信息：​        所在地：江苏 
+​    邮箱：17315718186@163.com
 ​        技术栈：reactjs  + nodejs + antd +…….
 ​        工作经历：智慧城市项目，桥梁安全监测系统…….
 Keyboard：
@@ -131,18 +125,13 @@ bootstrap
 
 ant-design
 
-nodejs
-
-jquery
-
-c# ,linq
-​
-.">
+n">
 <meta property="og:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
-<meta property="og:updated_time" content="2017-02-28T02:41:09.210Z">
+<meta property="og:updated_time" content="2017-02-28T02:46:52.438Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
 <meta name="twitter:description" content="个人信息：​        所在地：江苏 
+​    邮箱：17315718186@163.com
 ​        技术栈：reactjs  + nodejs + antd +…….
 ​        工作经历：智慧城市项目，桥梁安全监测系统…….
 Keyboard：
@@ -158,13 +147,7 @@ bootstrap
 
 ant-design
 
-nodejs
-
-jquery
-
-c# ,linq
-​
-.">
+n">
 <meta name="twitter:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
 
 
@@ -209,7 +192,6 @@ c# ,linq
   
     
   
-
   <div class="container one-collumn sidebar-position-left  ">
     <div class="headband"></div>
 
@@ -303,6 +285,7 @@ c# ,linq
     
       <p><img src="http://om2bpvpgi.bkt.clouddn.com/p3.png" alt="photo"></p>
 <h3 id="个人信息："><a href="#个人信息：" class="headerlink" title="个人信息："></a>个人信息：</h3><p>​        <strong><em>所在地：江苏</em></strong> </p>
+<p>​    <strong><em>邮箱：</em></strong>17315718186@163.com</p>
 <p>​        <strong><em>技术栈：reactjs  + nodejs + antd +…….</em></strong></p>
 <p>​        <strong><em>工作经历：智慧城市项目，桥梁安全监测系统…….</em></strong></p>
 <h3 id="Keyboard："><a href="#Keyboard：" class="headerlink" title="Keyboard："></a>Keyboard：</h3><ol>
@@ -399,6 +382,53 @@ c# ,linq
         
 
         <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/deartibers" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                  GitHub
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://weibo.com/3879213762/profile?topnav=1&wvr=6&is_all=1" target="_blank" title="新浪微博">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  新浪微博
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/users/84331b285335/timeline" target="_blank" title="简书">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  简书
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://www.chrisy.club/" target="_blank" title="LearnJava">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  LearnJava
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="http://www.jianshu.com/u/3245062a573d" target="_blank" title="LearnIOS">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                  LearnIOS
+                </a>
+              </span>
+            
           
         </div>
 
@@ -548,6 +578,105 @@ c# ,linq
   
 
   
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
+  <script>AV.initialize("I3VlMjT4JzrVCqOl1uAyQOhy-gzGzoHsz", "dey8vqJBMG0GTWsWbvWUArTl");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
 
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+ 
 </body>
 </html>
