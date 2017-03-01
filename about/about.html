@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="在不幸中学会慈悲，在寂寞中学会宽容" />
 
 
 
@@ -84,69 +84,94 @@
 
 
 
-<meta name="description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta name="description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats.d">
 <meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://deartibers.github.io/about/dd.html">
+<meta property="og:title" content="Dear Tibers">
+<meta property="og:url" content="http://deartibers.github.io/about/about.html">
 <meta property="og:site_name" content="Dear Tibers">
-<meta property="og:description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta property="og:description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
-<meta property="og:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
-<meta property="og:updated_time" content="2017-03-01T02:56:21.226Z">
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats.d">
+<meta property="og:updated_time" content="2017-03-01T03:33:30.330Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta name="twitter:title" content="Dear Tibers">
+<meta name="twitter:description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
-<meta name="twitter:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats.d">
 
 
 
@@ -168,7 +193,7 @@ n">
   
 
   
-    about | Dear Tibers
+     | Dear Tibers
   
 </title>
 </head>
@@ -273,7 +298,8 @@ n">
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
+      <div style="background-color:white" class="main-inner">
+	    <!-- particles.js container -->   
         <div class="content-wrap">
           <div id="content" class="content">
             
@@ -281,34 +307,53 @@ n">
   <div id="posts" class="posts-expand">
     
     
-      <p><img src="http://om2bpvpgi.bkt.clouddn.com/p3.png" alt="photo"></p>
-<h3 id="个人信息："><a href="#个人信息：" class="headerlink" title="个人信息："></a>个人信息：</h3><p>​        <strong><em>所在地：江苏</em></strong> </p>
-<p>​    <strong><em>邮箱：</em></strong>17315718186@163.com</p>
-<p>​        <strong><em>技术栈：reactjs  + nodejs + antd +…….</em></strong></p>
-<p>​        <strong><em>工作经历：智慧城市项目，桥梁安全监测系统…….</em></strong></p>
-<h3 id="Keyboard："><a href="#Keyboard：" class="headerlink" title="Keyboard："></a>Keyboard：</h3><ol>
-<li><p>javascript</p>
-</li>
-<li><p>h5+css3</p>
-</li>
-<li><p>ajax</p>
-</li>
-<li><p>sql server</p>
-</li>
-<li><p>bootstrap</p>
-</li>
-<li><p>ant-design</p>
-</li>
-<li><p>nodejs</p>
-</li>
-<li><p>jquery</p>
-</li>
-<li><p>c# ,linq</p>
-<p>​</p>
-<p>.</p>
-</li>
-</ol>
+      <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
 
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>
     
   </div>
 
@@ -316,11 +361,16 @@ n">
           </div>
           
 
-  <p>热评文章</p>
-  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
-
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="about/about.html"
+           data-title="" data-url="http://deartibers.github.io/about/about.html">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -347,7 +397,7 @@ n">
                src="http://om2bpvpgi.bkt.clouddn.com/psb.jpg"
                alt="tIbers" />
           <p class="site-author-name" itemprop="name">tIbers</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -402,24 +452,6 @@ n">
                 </a>
               </span>
             
-              <span class="links-of-author-item">
-                <a href="https://www.chrisy.club/" target="_blank" title="LearnJava">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnJava
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.jianshu.com/u/3245062a573d" target="_blank" title="LearnIOS">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnIOS
-                </a>
-              </span>
-            
           
         </div>
 
@@ -427,6 +459,24 @@ n">
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.chrisy.club/" title="LearnJava" target="_blank">LearnJava</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jianshu.com/u/3245062a573d" title="LearnIOS" target="_blank">LearnIOS</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -674,6 +724,7 @@ n">
 
 
   
- 
+ <!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script
 </body>
 </html>

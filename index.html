@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="在不幸中学会慈悲，在寂寞中学会宽容" />
 
 
 
@@ -84,12 +84,15 @@
 
 
 
+<meta name="description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dear Tibers">
 <meta property="og:url" content="http://deartibers.github.io/index.html">
 <meta property="og:site_name" content="Dear Tibers">
+<meta property="og:description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Dear Tibers">
+<meta name="twitter:description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
 
 
 
@@ -212,7 +215,8 @@
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
+      <div style="background-color:white" class="main-inner">
+	    <!-- particles.js container -->   
         <div class="content-wrap">
           <div id="content" class="content">
             
@@ -239,7 +243,7 @@
             
               
                 
-                <a class="post-title-link" href="/2017/03/01/初识c-webapi，前端菜鸟的成长之路/" itemprop="url">
+                <a class="post-title-link" href="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/" itemprop="url">
                   初识c# webapi，前端菜鸟的成长之路
                 </a>
               
@@ -264,8 +268,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/03/01/初识c-webapi，前端菜鸟的成长之路/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/01/初识c-webapi，前端菜鸟的成长之路/" itemprop="commentsCount"></span>
+                <a href="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/01/初识c#webapi，前端菜鸟的成长之路/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -275,7 +279,7 @@
 
           
           
-             <span id="/2017/03/01/初识c-webapi，前端菜鸟的成长之路/" class="leancloud_visitors" data-flag-title="初识c# webapi，前端菜鸟的成长之路">
+             <span id="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/" class="leancloud_visitors" data-flag-title="初识c# webapi，前端菜鸟的成长之路">
                &nbsp;|  &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -298,10 +302,15 @@
 
       
         
-          
-            <p>​     </p>
-
-          
+          <blockquote>
+<p><strong><em>后端小白的接口修炼史…</em></strong>    </p>
+</blockquote>
+<p>  c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -517,14 +526,14 @@
 
       
         
-          
-            <h3 id="var-let-const-的区别"><a href="#var-let-const-的区别" class="headerlink" title="var let const 的区别"></a>var let const 的区别</h3><p>​        这三个关键字都是用来定义变量的，在es6中，let用来定义变量，有着明确的作用域，外部函数将无法访问内部函数的let变量。Const用来定义常量，定义的常量指针不可改，指向这个变量的值可能改变。Var可以使得作用域升级，外部函数可以访问内部函数var声明的变量，这样变量作用域不明确不建议使用，建议使用let const</p>
+          <h3 id="var-let-const-的区别"><a href="#var-let-const-的区别" class="headerlink" title="var let const 的区别"></a>var let const 的区别</h3><p>​        这三个关键字都是用来定义变量的，在es6中，let用来定义变量，有着明确的作用域，外部函数将无法访问内部函数的let变量。Const用来定义常量，定义的常量指针不可改，指向这个变量的值可能改变。Var可以使得作用域升级，外部函数可以访问内部函数var声明的变量，这样变量作用域不明确不建议使用，建议使用let const</p>
 <p><strong>闭包：闭包函数为了访问外部函数的内部变量。</strong></p>
-<p><strong>场景1：</strong>在input标签的处理方法中，定义常量value=e.target.value，在方法中需要写一个过滤方法，</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">let func = (ep =&gt; (s =&gt;</div><div class="line">     (s.dtu.name).search(ep)&gt;-1||(s.location).search(ep)&gt;-1||</div><div class="line">     (pinyin.getCamelChars(s.location).toLowerCase()).search(ep)&gt;-1))(value);</div></pre></td></tr></table></figure>
-<p>​        这里使用了闭包函数，因为在input的处理函数外部使用这个过滤方法的时候将不能访问到变量value，需要使用闭包语法。</p>
-
-          
+<p><strong>场景1：</strong>在input标签的处理方法中，定义常量value=e.target.value，在方法中需要写一个过滤方法，<br>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/02/27/Hello-Hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -587,7 +596,7 @@
                src="http://om2bpvpgi.bkt.clouddn.com/psb.jpg"
                alt="tIbers" />
           <p class="site-author-name" itemprop="name">tIbers</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -642,24 +651,6 @@
                 </a>
               </span>
             
-              <span class="links-of-author-item">
-                <a href="https://www.chrisy.club/" target="_blank" title="LearnJava">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnJava
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.jianshu.com/u/3245062a573d" target="_blank" title="LearnIOS">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnIOS
-                </a>
-              </span>
-            
           
         </div>
 
@@ -667,6 +658,24 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.chrisy.club/" title="LearnJava" target="_blank">LearnJava</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jianshu.com/u/3245062a573d" title="LearnIOS" target="_blank">LearnIOS</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -914,6 +923,7 @@
 
 
   
- 
+ <!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script
 </body>
 </html>

@@ -84,16 +84,22 @@
 
 
 
-<meta name="description" content="​">
+<meta name="description" content="后端小白的接口修炼史…    
+
+  c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="初识c# webapi，前端菜鸟的成长之路">
-<meta property="og:url" content="http://deartibers.github.io/2017/03/01/初识c-webapi，前端菜鸟的成长之路/index.html">
+<meta property="og:url" content="http://deartibers.github.io/2017/03/01/初识c#webapi，前端菜鸟的成长之路/index.html">
 <meta property="og:site_name" content="Dear Tibers">
-<meta property="og:description" content="​">
-<meta property="og:updated_time" content="2017-03-01T01:57:00.470Z">
+<meta property="og:description" content="后端小白的接口修炼史…    
+
+  c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。">
+<meta property="og:updated_time" content="2017-03-01T08:59:02.348Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识c# webapi，前端菜鸟的成长之路">
-<meta name="twitter:description" content="​">
+<meta name="twitter:description" content="后端小白的接口修炼史…    
+
+  c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。">
 
 
 
@@ -214,7 +220,8 @@
     </header>
 
     <main id="main" class="main">
-      <div class="main-inner">
+      <div style="background-color:white" class="main-inner">
+	    <!-- particles.js container -->   
         <div class="content-wrap">
           <div id="content" class="content">
             
@@ -263,8 +270,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2017/03/01/初识c-webapi，前端菜鸟的成长之路/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/01/初识c-webapi，前端菜鸟的成长之路/" itemprop="commentsCount"></span>
+                <a href="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/01/初识c#webapi，前端菜鸟的成长之路/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -274,7 +281,7 @@
 
           
           
-             <span id="/2017/03/01/初识c-webapi，前端菜鸟的成长之路/" class="leancloud_visitors" data-flag-title="初识c# webapi，前端菜鸟的成长之路">
+             <span id="/2017/03/01/初识c#webapi，前端菜鸟的成长之路/" class="leancloud_visitors" data-flag-title="初识c# webapi，前端菜鸟的成长之路">
                &nbsp;|  &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -296,8 +303,23 @@
       
 
       
-        <p>​     </p>
-
+        <blockquote>
+<p><strong><em>后端小白的接口修炼史…</em></strong>    </p>
+</blockquote>
+<p>  c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。</p>
+<a id="more"></a>
+<h3 id="LINQ查询语句"><a href="#LINQ查询语句" class="headerlink" title="LINQ查询语句"></a>LINQ查询语句</h3><p>​    linq语句在数据查询方面使用十分方便，基本查询方式： </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var query = from a in db.a</div><div class="line">            from b in db.b</div><div class="line">            where a.ID&gt;10 &amp;&amp; b.ID&lt;20</div><div class="line">            select new &#123;&#125;</div></pre></td></tr></table></figure>
+<p>类型：</p>
+<p>Var query = data. ofType<tring>()  查询出结合data中所有string类型的元素。</tring></p>
+<p>排序</p>
+<p>orderby子句解析为0rderBy(),orderby descending解析为0rderBy() Descending（降序）</p>
+<p>take(n)表示取查询结果的前n条语句，orderby和take（）可用于分页查询</p>
+<p>分组：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line">var query = (</div><div class="line"></div><div class="line">                      from a in entity.T_TOURIST_EATNINGS</div><div class="line"></div><div class="line">                      from b in entity.T_TOURIST</div><div class="line"></div><div class="line">                      from c in entity.T_DIM_TYPEDICTIONARY</div><div class="line"></div><div class="line">                      where a.TourID == b.ID &amp;&amp; b.TourID == c.Type_ID</div><div class="line"></div><div class="line">                      select new</div><div class="line"></div><div class="line">                      &#123;</div><div class="line"></div><div class="line">                          year = a.Year,</div><div class="line"></div><div class="line">                          a.TourRecept,</div><div class="line"></div><div class="line">                          a.TourEarning,</div><div class="line"></div><div class="line">                          c.Description</div><div class="line"></div><div class="line">                      &#125;);</div><div class="line"></div><div class="line">        var result = query.ToList().GroupBy(g =&gt; new &#123; g.Description, g.year                 &#125;).OrderByDescending(a =&gt; a.Key.year).Select(a =&gt; new</div><div class="line"></div><div class="line">                &#123;</div><div class="line"></div><div class="line">                    year = a.Key.year,</div><div class="line"></div><div class="line">                    Description = a.Select(m =&gt; m.Description).FirstOrDefault(),</div><div class="line"></div><div class="line">                    TourEarning = a.Sum(m =&gt; m.TourEarning),</div><div class="line"></div><div class="line">                    TourRecept = a.Sum(m =&gt; m.TourRecept)</div><div class="line"></div><div class="line">                &#125;);</div><div class="line"></div><div class="line">                var tmp = result.ToList();</div><div class="line"></div><div class="line">                var fk = tmp.GroupBy(k =&gt; k.year).Select(m =&gt; new</div><div class="line"></div><div class="line">                &#123;</div><div class="line"></div><div class="line">                    year = m.Key,</div><div class="line"></div><div class="line">                    result = m.Select(k =&gt; new</div><div class="line"></div><div class="line">                    &#123;</div><div class="line"></div><div class="line">                        Description = k.Description,</div><div class="line"></div><div class="line">                        TourEarning = k.TourEarning,</div><div class="line"></div><div class="line">                        TourRecept = k.TourRecept</div><div class="line"></div><div class="line">                    &#125;).ToList()</div><div class="line"></div><div class="line">                &#125;);</div><div class="line">                return fk.ToList();</div></pre></td></tr></table></figure>
+<h3 id="sql-server相关知识"><a href="#sql-server相关知识" class="headerlink" title="sql server相关知识"></a>sql server相关知识</h3><h3 id="接口测试插件分享"><a href="#接口测试插件分享" class="headerlink" title="接口测试插件分享"></a>接口测试插件分享</h3><p>​    DHC插件，chrome的一款接口测试插件。</p>
+<p><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/default.min.css"></p>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
       
     </div>
 
@@ -366,10 +388,10 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2017/03/01/初识c-webapi，前端菜鸟的成长之路/"
+        <div class="ds-share flat" data-thread-key="2017/03/01/初识c#webapi，前端菜鸟的成长之路/"
      data-title="初识c# webapi，前端菜鸟的成长之路"
      data-content=""
-     data-url="http://deartibers.github.io/2017/03/01/初识c-webapi，前端菜鸟的成长之路/">
+     data-url="http://deartibers.github.io/2017/03/01/初识c#webapi，前端菜鸟的成长之路/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -399,8 +421,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/03/01/初识c-webapi，前端菜鸟的成长之路/"
-           data-title="初识c# webapi，前端菜鸟的成长之路" data-url="http://deartibers.github.io/2017/03/01/初识c-webapi，前端菜鸟的成长之路/">
+      <div class="ds-thread" data-thread-key="2017/03/01/初识c#webapi，前端菜鸟的成长之路/"
+           data-title="初识c# webapi，前端菜鸟的成长之路" data-url="http://deartibers.github.io/2017/03/01/初识c#webapi，前端菜鸟的成长之路/">
       </div>
     
   </div>
@@ -440,7 +462,7 @@
                src="http://om2bpvpgi.bkt.clouddn.com/psb.jpg"
                alt="tIbers" />
           <p class="site-author-name" itemprop="name">tIbers</p>
-          <p class="site-description motion-element" itemprop="description"></p>
+          <p class="site-description motion-element" itemprop="description">在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气</p>
         </div>
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
@@ -495,24 +517,6 @@
                 </a>
               </span>
             
-              <span class="links-of-author-item">
-                <a href="https://www.chrisy.club/" target="_blank" title="LearnJava">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnJava
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://www.jianshu.com/u/3245062a573d" target="_blank" title="LearnIOS">
-                  
-                    <i class="fa fa-fw fa-globe"></i>
-                  
-                  LearnIOS
-                </a>
-              </span>
-            
           
         </div>
 
@@ -520,6 +524,24 @@
         
 
         
+        
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              友情链接
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="https://www.chrisy.club/" title="LearnJava" target="_blank">LearnJava</a>
+                </li>
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://www.jianshu.com/u/3245062a573d" title="LearnIOS" target="_blank">LearnIOS</a>
+                </li>
+              
+            </ul>
+          </div>
         
 
       </section>
@@ -531,7 +553,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#LINQ查询语句"><span class="nav-number">1.</span> <span class="nav-text">LINQ查询语句</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#sql-server相关知识"><span class="nav-number">2.</span> <span class="nav-text">sql server相关知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#接口测试插件分享"><span class="nav-number">3.</span> <span class="nav-text">接口测试插件分享</span></a></li></ol></div>
             
           </div>
         </section>
@@ -782,6 +804,7 @@
 
 
   
- 
+ <!-- 背景动画 -->
+<script type="text/javascript" src="/js/src/particle.js"></script
 </body>
 </html>
