@@ -84,69 +84,97 @@
 
 
 
-<meta name="description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta name="description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
+
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
 <meta property="og:url" content="http://deartibers.github.io/about/index.html">
 <meta property="og:site_name" content="Dear Tibers">
-<meta property="og:description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta property="og:description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
-<meta property="og:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
-<meta property="og:updated_time" content="2017-02-28T02:46:52.438Z">
+
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats">
+<meta property="og:updated_time" content="2017-03-01T03:06:29.020Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="about">
-<meta name="twitter:description" content="个人信息：​        所在地：江苏 
-​    邮箱：17315718186@163.com
-​        技术栈：reactjs  + nodejs + antd +…….
-​        工作经历：智慧城市项目，桥梁安全监测系统…….
-Keyboard：
-javascript
+<meta name="twitter:description" content="particles.js
+  
+  
+  
+  
 
-h5+css3
 
-ajax
 
-sql server
 
-bootstrap
 
-ant-design
+  -- particles
 
-n">
-<meta name="twitter:image" content="http://om2bpvpgi.bkt.clouddn.com/p3.png">
+
+
+
+
+
+
+
+
+
+
+
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = &apos;absolute&apos;;
+  stats">
 
 
 
@@ -281,34 +309,55 @@ n">
   <div id="posts" class="posts-expand">
     
     
-      <p><img src="http://om2bpvpgi.bkt.clouddn.com/p3.png" alt="photo"></p>
-<h3 id="个人信息："><a href="#个人信息：" class="headerlink" title="个人信息："></a>个人信息：</h3><p>​        <strong><em>所在地：江苏</em></strong> </p>
-<p>​    <strong><em>邮箱：</em></strong>17315718186@163.com</p>
-<p>​        <strong><em>技术栈：reactjs  + nodejs + antd +…….</em></strong></p>
-<p>​        <strong><em>工作经历：智慧城市项目，桥梁安全监测系统…….</em></strong></p>
-<h3 id="Keyboard："><a href="#Keyboard：" class="headerlink" title="Keyboard："></a>Keyboard：</h3><ol>
-<li><p>javascript</p>
-</li>
-<li><p>h5+css3</p>
-</li>
-<li><p>ajax</p>
-</li>
-<li><p>sql server</p>
-</li>
-<li><p>bootstrap</p>
-</li>
-<li><p>ant-design</p>
-</li>
-<li><p>nodejs</p>
-</li>
-<li><p>jquery</p>
-</li>
-<li><p>c# ,linq</p>
-<p>​</p>
-<p>.</p>
-</li>
-</ol>
+      
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>particles.js</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+</head>
+<body>
 
+<!-- count particles -->
+<div class="count-particles">
+  <span class="js-count-particles">--</span> particles
+</div>
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="particles.js"></script>
+<script src="js/app.js"></script>
+
+<!-- stats.js -->
+<script src="js/lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>
     
   </div>
 
@@ -344,7 +393,7 @@ n">
       <section class="site-overview sidebar-panel  sidebar-panel-active ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="http://b330.photo.store.qq.com/psb?/V13LzuYt3y2788/Q0ho98gJx7CUYtQ1EPbPAN7mHQmPNs*cBiLXWEhOr3Q!/m/dEPBucQaBQAAnull&bo=gAJYAwAAAAABB*k!&rf=photolist&t=5"
+               src="http://om2bpvpgi.bkt.clouddn.com/psb.jpg"
                alt="tIbers" />
           <p class="site-author-name" itemprop="name">tIbers</p>
           <p class="site-description motion-element" itemprop="description"></p>
@@ -352,7 +401,7 @@ n">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -362,7 +411,7 @@ n">
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
