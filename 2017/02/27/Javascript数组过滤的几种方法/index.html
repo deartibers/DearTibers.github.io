@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="在不幸中学会慈悲，在寂寞中学会宽容" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -84,16 +84,34 @@
 
 
 
-<meta name="description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
+<meta name="description" content="ECMAScript提供了五个迭代方法，some(),filter(),forEach(),map(),some()…
+
+作用：
+every(): 对数组中每一项运行指定函数，如果都返回true，则返回true
+filter(): 对数组中每一项运行指定函数，返回该函数返回true的项返回数组
+forEach(): 对数组中每一项运行指定函数，该函数没有返回值
+map(): 对数组中每一项运行指">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Javascript数组过滤的几种方法">
 <meta property="og:url" content="http://deartibers.github.io/2017/02/27/Javascript数组过滤的几种方法/index.html">
 <meta property="og:site_name" content="Dear Tibers">
-<meta property="og:description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
-<meta property="og:updated_time" content="2017-02-27T08:49:05.948Z">
+<meta property="og:description" content="ECMAScript提供了五个迭代方法，some(),filter(),forEach(),map(),some()…
+
+作用：
+every(): 对数组中每一项运行指定函数，如果都返回true，则返回true
+filter(): 对数组中每一项运行指定函数，返回该函数返回true的项返回数组
+forEach(): 对数组中每一项运行指定函数，该函数没有返回值
+map(): 对数组中每一项运行指">
+<meta property="og:updated_time" content="2017-03-02T01:09:19.025Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Javascript数组过滤的几种方法">
-<meta name="twitter:description" content="在不幸中学会慈悲，在寂寞中学会宽容，       愿你有好运气">
+<meta name="twitter:description" content="ECMAScript提供了五个迭代方法，some(),filter(),forEach(),map(),some()…
+
+作用：
+every(): 对数组中每一项运行指定函数，如果都返回true，则返回true
+filter(): 对数组中每一项运行指定函数，返回该函数返回true的项返回数组
+forEach(): 对数组中每一项运行指定函数，该函数没有返回值
+map(): 对数组中每一项运行指">
 
 
 
@@ -297,7 +315,22 @@
       
 
       
-        
+        <blockquote>
+<p>ECMAScript提供了五个迭代方法，some(),filter(),forEach(),map(),some()…</p>
+</blockquote>
+<h5 id="作用："><a href="#作用：" class="headerlink" title="作用："></a>作用：</h5><ol>
+<li>every(): 对数组中每一项运行指定函数，如果都返回true，则返回true</li>
+<li>filter(): 对数组中每一项运行指定函数，返回该函数返回true的项返回数组</li>
+<li>forEach(): 对数组中每一项运行指定函数，该函数没有返回值</li>
+<li>map(): 对数组中每一项运行指定函数，返回每次调用结果组成的数组</li>
+<li>some(): 对数组中每一项运行指定函数，如果任一项返回true，则返回true</li>
+</ol>
+<a id="more"></a>
+<h5 id="示例："><a href="#示例：" class="headerlink" title="示例："></a>示例：</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*</span></div><div class="line"> * every()的用法</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> numbers = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>,<span class="number">5</span>,<span class="number">4</span>,<span class="number">3</span>,<span class="number">2</span>,<span class="number">1</span>];</div><div class="line"><span class="keyword">var</span> everyResult = numbers.every(<span class="function">(<span class="params">item,index,array</span>)=&gt;</span>&#123;</div><div class="line">  item &gt; <span class="number">2</span></div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(everyResult); <span class="comment">//输出false</span></div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * some()的用法</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> someResult = numbers.some(<span class="function">(<span class="params">item,index,array</span>)=&gt;</span>&#123;</div><div class="line">  item &gt; <span class="number">2</span></div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(someResult); <span class="comment">//输出true</span></div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * filter()的用法</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> filterResult = numbers.filter(<span class="function">(<span class="params">item,index,array</span>)=&gt;</span>&#123;</div><div class="line">   item &gt; <span class="number">2</span></div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(filterResult); <span class="comment">//输出 [3,4,5,6,5,4,3]</span></div><div class="line"></div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * map()的用法</div><div class="line">*/</div><div class="line"><span class="keyword">var</span> mapResult = numbers.map(<span class="function">(<span class="params">item,index,array</span>)=&gt;</span>&#123;</div><div class="line">  item * <span class="number">2</span>;</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(mapResult); <span class="comment">//输出[2,4,6,8,10,12,10,8,6,4,2]</span></div><div class="line"></div><div class="line"><span class="comment">/*</span></div><div class="line"> * forEach()的用法，这个方法没有返回值，本质上与for迭代数组一样</div><div class="line">*/</div><div class="line">numbers.forEach(<span class="function"><span class="keyword">function</span>(<span class="params">item,index,array</span>)</span>&#123;</div><div class="line">  <span class="comment">//执行某些操作</span></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>支持这些迭代方法的浏览器有：IE9+，Chrome，Firefox2+，Safari3，Opera9.5…</p>
+</blockquote>
+
       
     </div>
 
@@ -331,6 +364,12 @@
     </div>
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag">#javascript</a>
+          
+        </div>
       
 
       
@@ -527,7 +566,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#作用："><span class="nav-number">1.</span> <span class="nav-text">作用：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#示例："><span class="nav-number">2.</span> <span class="nav-text">示例：</span></a></li></ol></div>
             
           </div>
         </section>
