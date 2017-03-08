@@ -94,7 +94,7 @@
 <meta property="og:description" content="后端小白的接口修炼史…    
 
   c# webapi 也就是前端常说的后台接口，网站或app通过http请求，GET/POST等调用可以完成常用的增删改查操作。c# webapi有一定的书写格式，写法比较固定。">
-<meta property="og:updated_time" content="2017-03-03T06:35:36.052Z">
+<meta property="og:updated_time" content="2017-03-03T06:51:31.711Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初识c# webapi，前端菜鸟的成长之路">
 <meta name="twitter:description" content="后端小白的接口修炼史…    
@@ -312,7 +312,7 @@
 <p>接口基本格式：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">//定义路由和对应的函数 ，这里是edm/add/edmnurse</div><div class="line">routes.MapHttpRoute(</div><div class="line">                &quot;AddEdmNurse&quot;,</div><div class="line">                &quot;edm/add/edmnurse&quot;,</div><div class="line">                new &#123; controller = &quot;EdmYly&quot;, action = &quot;AddEdmNurse&quot; &#125;);</div></pre></td></tr></table></figure>
 <p>对应的处理函数：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/// &lt;summary&gt;</div><div class="line">/// 保存养老院信息</div><div class="line">/// &lt;/summary&gt;</div><div class="line">/// &lt;param name=&quot;model&quot;&gt;参数&lt;/param&gt;</div><div class="line">/// &lt;returns&gt;添加结果&lt;/returns&gt;</div><div class="line">[AcceptVerbs(&quot;Post&quot;)]</div><div class="line">[LogInfo(&quot;保存信息&quot;, false)]        </div><div class="line">[Authorization(AuthorizationCode.HumanisticCare_PastureEdm_Info_Add)]        </div><div class="line">public HttpResponseMessage AddEdmNurse([FromBody]EdmNurse model)</div><div class="line">&#123;</div><div class="line">    //执行数据库增删改查操作....</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">/// &lt;summary&gt;</div><div class="line">/// 保存信息</div><div class="line">/// &lt;/summary&gt;</div><div class="line">/// &lt;param name=&quot;model&quot;&gt;参数&lt;/param&gt;</div><div class="line">/// &lt;returns&gt;添加结果&lt;/returns&gt;</div><div class="line">[AcceptVerbs(&quot;Post&quot;)]</div><div class="line">[LogInfo(&quot;保存信息&quot;, false)]        </div><div class="line">[Authorization(AuthorizationCode.HumanisticCare_PastureEdm_Info_Add)]        </div><div class="line">public HttpResponseMessage AddEdmNurse([FromBody]EdmNurse model)</div><div class="line">&#123;</div><div class="line">    //执行数据库增删改查操作....</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="LINQ查询语句"><a href="#LINQ查询语句" class="headerlink" title="LINQ查询语句"></a>LINQ查询语句</h3><p>​    linq语句在数据查询方面使用十分方便，基本查询方式： </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">var query = from a in db.a</div><div class="line">            from b in db.b</div><div class="line">            where a.ID&gt;10 &amp;&amp; b.ID&lt;20</div><div class="line">            select new &#123;&#125;</div></pre></td></tr></table></figure>
 <p>类型：</p>
@@ -386,6 +386,10 @@
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/08/nodeJs入门教程/" rel="prev" title="nodeJs入门教程">
+                nodeJs入门教程 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -479,7 +483,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
